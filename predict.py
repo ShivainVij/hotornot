@@ -7,8 +7,8 @@ from torchvision.models import resnet18
 import torchvision
 
 def predict(imgPath):
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-    model = torch.load('model.pth')
+    device = torch.device('cpu')
+    model = torch.load('model.pth', map_location='cpu')
     net = torch.load('net.pth')
     model.eval()
     model.to(device)
