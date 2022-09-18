@@ -1,0 +1,7 @@
+torch==1.8.1+cpu
+numpy
+Jinja2==2.6
+flask===1.1.2
+gluoncv
+opencv-python
+torchvision
